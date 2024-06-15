@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="loginbox">
+            <form>
+                <div class="heading">
+                    <h1 id="formhed">SignUp here!</h1>
+                </div>
+                <div>
+                    <input id="inputname" type="text" placeholder="Enter your name">
+                </div>
+                <div>
+                    <input type="email" placeholder="Enter your email here">
+                </div>
+                <div>
+                    <input type="passward" placeholder="Enter passward here">
+
+                </div>
+                <div>
+                    <p>forget passward
+                        <a href="#">clickhere</a>
+                    </p>
+                </div>
+                <div class="button">
+                    <button id="signupbtn" type="button" class="btn1">SignUp</button>
+                    <button id="loginbtn" type="button" class="btn2">Login</button>
+
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+    </div>
+    <script>
+        document.getElementById("signupbtn").addEventListener("click", function () {
+            console.log("hello")
+            document.getElementById("inputname").style.display = "block"
+            document.getElementById("formhed").innerText="SignUp here"
+        })
+        document.getElementById("loginbtn").addEventListener("click", function () {
+            console.log("hello")
+            document.getElementById("inputname").style.display = "none"
+             document.getElementById("formhed").innerText="Login here"
+        })
+    </script>
+</body>
+
+</html>
